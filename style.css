@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Chiron+Hei+HK:ital,wght@0,200..900;1,200..900&family=LXGW+WenKai+Mono+TC&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1-light: #CDF8A2;
+    --color-1-dark: #013D26;
+    --color-2-light: #FCDD94;
+    --color-2-dark: #976F14;
+    --color-3-light: #C7B4EA;
+    --color-3-dark: #5A479B;
+    --color-4-light: #E0EA54;
+    --color-4-dark: #889318;
+    --color-5-light: #F4AE87;
+    --color-5-dark: #BE4504;
+    --color-6-light: #FEB4D7;
+    --color-6-dark: #80033A;
+    --color-7-light: #5CF3C4;
+    --color-7-dark: #096C4A;
+    --color-8-light:#93EBF8;
+    --color-8-dark: #2C8087;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 540;
+    color: var(--color-1-dark);
+}
+
+.chatgpt {
+    background-color: var(--color-1-light);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    gap: 0;
+}
+.item {
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 8px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    padding-left: 8px;
+    margin: 5px;
+}
+.item > .item-1 {
+    display: grid;
+    grid-template-columns: 20px 180px;
+    align-items: center;
+    column-gap: 6px;
+    row-gap: 5px ;
+}
+
+/* aligning vertically with display grid */
+.item:nth-child(1) > .item-1 > p[class="item-1-info"] {
+    font-size: 16px;
+}
+.item:nth-child(2) > .item-1 > p[class="item-1-info"] {
+    font-size: 14px;
+}
+.item:nth-child(3) > .item-1 > p[class="item-1-info"] {
+    font-size: 18px;
+}
+.item:nth-child(4) > .item-1 > p[class="item-1-info"] {
+    font-size: 12px;
+}
+.item:nth-child(5) > .item-1 > p[class="item-1-info"] {
+    font-size: 13px;
+}
+.item:nth-child(6) > .item-1 > p[class="item-1-info"] {
+    font-size: 15px;
+}
+.item:nth-child(7) > .item-1 > p[class="item-1-info"] {
+    font-size: 14px;
+}
+.item:nth-child(8) > .item-1 > p[class="item-1-info"] {
+    font-size: 14px;
+}
+
+
+
+
+/* example size */
+.container > .item > .item-2 > .example-items p {
+    line-height: 15px;
+}
+.container > .item:nth-child(1) > .item-2 > .example-items p {
+    font-size: 15px;
+}
+.container > .item:nth-child(2) > .item-2 > .example-items p {
+    font-size: 10px;
+    line-height: 11px;
+}
+.container > .item:nth-child(3) > .item-2 > .example-items p {
+    font-size: 14px;
+    line-height: 15px;
+}
+.container > .item:nth-child(4) > .item-2 > .example-items p {
+    font-size: 11px;
+    line-height: 12px;
+}
+.container > .item:nth-child(5) > .item-2 > .example-items p {
+    font-size: 11px;
+    line-height: 11px;
+}
+.container > .item:nth-child(6) > .item-2 > .example-items p {
+    font-size: 12px;
+    line-height: 13px;
+}
+.container > .item:nth-child(7) > .item-2 > .example-items p {
+    font-size: 10px;
+    line-height: 11px;
+}
+.container > .item:nth-child(8) > .item-2 > .example-items p {
+    font-size: 11px;
+    line-height: 12px;
+}
+
+
+
+
+
+
+.item-1-number, .item-1-subheading {
+    display: grid;
+    place-items: center;
+}
+.item-1-number {
+    border: 0.5px solid black;
+    border-radius: 3px;
+    height: 20px;
+}
+.item-1-subheading {
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+}
+
+
+.item-2 {
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 9px;
+    padding: 6px;
+}
+.example {
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    width: 67px;
+}
+.example-items {
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns:auto auto 150px;
+    row-gap: 4px;
+    align-items: center;
+}
+.example-items-arrow {
+    margin: 0px 5px 0px 5px;
+}
+
+
+.subscribe-div {
+    background-color: color-mix(in srgb, var(--color-1-dark), white 15%);
+    margin-bottom: 50px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.subscribe-div img {
+    height: 25px;
+}
+.subscribe-p {
+    color: white;
+    font-size: 17px;
+}
+
+/* coloring */
+/* number */
+.item:nth-child(1) > .item-1 > .item-1-number {
+    background-color: var(--color-1-light);
+}
+.item:nth-child(2) > .item-1 > .item-1-number {
+    background-color: var(--color-2-light);
+}
+.item:nth-child(3) > .item-1 > .item-1-number {
+    background-color: var(--color-3-light);
+}
+.item:nth-child(4) > .item-1 > .item-1-number {
+    background-color: var(--color-4-light);
+}
+.item:nth-child(5) > .item-1 > .item-1-number {
+    background-color: var(--color-5-light);
+}
+.item:nth-child(6) > .item-1 > .item-1-number {
+    background-color: var(--color-6-light);
+}
+.item:nth-child(7) > .item-1 > .item-1-number {
+    background-color: var(--color-7-light);
+}
+.item:nth-child(8) > .item-1 > .item-1-number {
+    background-color: var(--color-8-light);
+}
+
+/* heading */
+.item:nth-child(1) > .item-1 > .item-1-heading {
+    color: var(--color-1-dark);
+}
+.item:nth-child(2) > .item-1 > .item-1-heading {
+    color: var(--color-2-dark);
+}
+.item:nth-child(3) > .item-1 > .item-1-heading {
+    color: var(--color-3-dark);
+}
+.item:nth-child(4) > .item-1 > .item-1-heading {
+    color: var(--color-4-dark);
+}
+.item:nth-child(5) > .item-1 > .item-1-heading {
+    color: var(--color-5-dark);
+}
+.item:nth-child(6) > .item-1 > .item-1-heading {
+    color: var(--color-6-dark);
+}
+.item:nth-child(7) > .item-1 > .item-1-heading {
+    color: var(--color-7-dark);
+}
+.item:nth-child(8) > .item-1 > .item-1-heading {
+    color: var(--color-8-dark);
+}
+
+/* subheading */
+.item:nth-child(1) > .item-1 > .item-1-subheading {
+    background-color: var(--color-1-dark);
+}
+.item:nth-child(2) > .item-1 > .item-1-subheading {
+    background-color: var(--color-2-dark);
+}
+.item:nth-child(3) > .item-1 > .item-1-subheading {
+    background-color: var(--color-3-dark);
+}
+.item:nth-child(4) > .item-1 > .item-1-subheading {
+    background-color: var(--color-4-dark);
+}
+.item:nth-child(5) > .item-1 > .item-1-subheading {
+    background-color: var(--color-5-dark);
+}
+.item:nth-child(6) > .item-1 > .item-1-subheading {
+    background-color: var(--color-6-dark);
+}
+.item:nth-child(7) > .item-1 > .item-1-subheading {
+    background-color: var(--color-7-dark);
+}
+.item:nth-child(8) > .item-1 > .item-1-subheading {
+    background-color: var(--color-8-dark);
+}
+
+/* example */
+.item:nth-child(1) > .item-2 > .example {
+    background-color: var(--color-1-light);
+}
+.item:nth-child(2) > .item-2 > .example {
+    background-color: var(--color-2-light);
+}
+.item:nth-child(3) > .item-2 > .example {
+    background-color: var(--color-3-light);
+}
+.item:nth-child(4) > .item-2 > .example {
+    background-color: var(--color-4-light);
+}
+.item:nth-child(5) > .item-2 > .example {
+    background-color: var(--color-5-light);
+}
+.item:nth-child(6) > .item-2 > .example {
+    background-color: var(--color-6-light);
+}
+.item:nth-child(7) > .item-2 > .example {
+    background-color: var(--color-7-light);
+}
+.item:nth-child(8) > .item-2 > .example {
+    background-color: var(--color-8-light);
+}
+
+/* linear gradient */
+.item-2 {
+    background-color: white;
+}
+.item:nth-child(1) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-1-light), white 70%), white);
+}
+.item:nth-child(2) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-2-light), white 70%), white);
+}
+.item:nth-child(3) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-3-light), white 70%), white);
+}
+.item:nth-child(4) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-4-light), white 70%), white);
+}
+.item:nth-child(5) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-5-light), white 70%), white);
+}
+.item:nth-child(6) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-6-light), white 70%), white);
+}
+.item:nth-child(7) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-7-light), white 70%), white);
+}
+.item:nth-child(8) {
+    background: linear-gradient(to top, color-mix(in srgb, var(--color-8-light), white 70%), white);
+}
