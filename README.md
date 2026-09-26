@@ -1,4 +1,4 @@
-cd# Website Clone Practice Project
+# Website Clone Practice Project
 
 This is a simple practice project where I attempted to clone a real website to improve my HTML and CSS skills. 
 
